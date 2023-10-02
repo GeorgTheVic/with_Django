@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Регистрация на Django</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/main.js"></script>
+</head>
+</head>
+
+<body>
+  <header class="header page-header">
+  <div class="container">
+    <div class="header__inner card-panel green lighten-2">
+      <h1 class="header__title">
+        <a href="index.html" class="header__title black-text">Главная страница</a>
+      </h1>
+
+      <div class="header__btns">
+        <!-- Dropdown Trigger -->
+        <button class="btn-reset">
+          <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-target='dropdown1'></a>
+        </button>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="profile.html">Профиль</a></li>
+          <li><a href="orders.html">Заказы</a></li>
+          <li><a href="#!">Админ-панель</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Выйти</a></li>
+        </ul>
+
+        <button class="waves-effect btn pulse">
+          <a href="login.html" class="header__registration black-text">
+            Вход
+          </a>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+  <section class="order-create">
+    <div class="container">
+      <div class="col s12">
+        <h2 class="order-create__title">
+          Оформление
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col s7">
+
+          <h2 class="order-create__title">
+            Адрес доставки
+          </h2>
+
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Иван" id="inputFirstName" type="text" class="validate">
+                <label for="inputFirstName">Имя</label>
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Иванов" id="inputFirstName" type="text" class="validate">
+                <label for="inputFirstName">Фамилия</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="your@example.com" id="email" type="email" class="validate">
+                <label for="email">Адрес электронной почты</label>
+              </div>
+
+              <div class="input-field col s12">
+                <input placeholder="Россия, Москва, ул. Мира, дом 6" id="address" type="text" class="validate">
+                <label for="address">Адрес</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <button class=" btn col s12" type="submit">Продолжить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col s5">
+          <h3 class="order-create__title order-create__title-flex">
+            Корзина
+            <span class="order-create__badge badge white-text">3</span>
+          </h3>
+
+          <div class="card card-order">
+            <div class="row s12">
+              <div class="card-order__wrapper">
+                <div class="card-order__items">
+                  <div class="card-order__flex">
+                    <h6 class="card-order__title">
+                      Product name
+                    </h6>
+                    <p class="card-order__price">
+                      200 $
+                    </p>
+                  </div>
+                  <p class="card-order__counter">
+                    2 шт.
+                  </p>
+                </div>
+                <div class="divider"></div>
+                <div class="card-order__items">
+                  <div class="card-order__flex">
+                  <h6 class="card-order__title">
+                    Product name
+                  </h6>
+                  <p class="card-order__price">
+                    700 $
+                  </p>
+                </div>
+                  <p class="card-order__counter">
+                    1 шт.
+                  </p>
+                </div>
+                <div class="divider"></div>
+                <div class="card-order__items">
+                  <div class="card-order__flex">
+                  <h6 class="card-order__title">
+                    Product name
+                  </h6>
+                  <p class="card-order__price">
+                    80 $
+                  </p>
+                </div>
+                  <p class="card-order__counter">
+                    3 шт.
+                  </p>
+                </div>
+                <div class="divider"></div>
+
+              </div>
+              <div class="card-footer order-create__subcard">
+                <p class="order-create__total">
+                  Всего
+                </p>
+                <p class="order-create__score">
+                  980 $
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

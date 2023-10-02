@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Регистрация на Django</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/main.js"></script>
+</head>
+</head>
+
+<body>
+  <div class="container">
+    <form method="post" class="login card grey lighten-3 col s12 m6">
+      <h2 class="login__title card-title">
+        Авторизация
+      </h2>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Введите имя пользователя" id="first_name" type="text" class="validate">
+          <label class="login__label black-text" for="first_name">Имя пользователя</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" placeholder="Введите пароль" class="validate">
+          <label class="login__label black-text" for="password">Пароль</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 login__btns">
+          <button class="btn-reset login__btn">
+            <a href="#" class="login__link">Забыли пароль?</a>
+          </button>
+          <button class="btn-reset login__btn-autorization btn grey darken-3" type="submit">
+              Авторизоваться
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 center">
+          <button class="btn-reset">
+            <a href="register.html" class="black-text">Нужен аккаунт? Зарегистрируйся!</a>
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Регистрация на Django</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header page-header">
+  <div class="container">
+    <div class="header__inner card-panel green lighten-2">
+      <h1 class="header__title">
+        <a href="index.html" class="header__title black-text">Главная страница</a>
+      </h1>
+
+      <div class="header__btns">
+        <!-- Dropdown Trigger -->
+        <button class="btn-reset">
+          <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-target='dropdown1'></a>
+        </button>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="profile.html">Профиль</a></li>
+          <li><a href="orders.html">Заказы</a></li>
+          <li><a href="#!">Админ-панель</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Выйти</a></li>
+        </ul>
+
+        <button class="waves-effect btn pulse">
+          <a href="login.html" class="header__registration black-text">
+            Вход
+          </a>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="products">
+        <div class="container">
+          <h2 class="products__title">
+            Каталог товаров
+          </h2>
+
+          <div class="row">
+            <div class="col s12 ">
+              <div class="card col s4">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <picture>
+                    <img class="activator" src="img/products/sneakers.jpeg" width="200" height="450">
+                  </picture>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Кроссовки<i
+                      class="material-icons right">more_vert</i></span>
+                  <p><a href="#">В корзину</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Кроссовки<i
+                      class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+
+              <div class="card col s4">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <picture>
+                    <img class="activator" src="img/products/jeans.jpg" width="200" height="450">
+                  </picture>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Джинсы<i
+                      class="material-icons right">more_vert</i></span>
+                  <p><a href="#">В корзину</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Джинсы<i
+                      class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+
+              <div class="card col s4">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <picture>
+                    <img class="activator" src="img/products/t-shirt.jpg" width="200" height="450">
+                  </picture>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Футболка<i
+                      class="material-icons right">more_vert</i></span>
+                  <p><a href="#">В корзину</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Футболка<i
+                      class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <!-- place for modal -->
+  </div>
+</body>
+
+</html>
